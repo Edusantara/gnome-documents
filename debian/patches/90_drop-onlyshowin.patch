@@ -1,0 +1,36 @@
+Description: Show GNOME Documents in menus everywhere
+Author: Jeremy Bicha <jbicha@ubuntu.com>
+Index: gnome-documents-3.8.4/data/gnome-documents.desktop
+===================================================================
+--- gnome-documents-3.8.4.orig/data/gnome-documents.desktop	2013-09-03 17:11:55.994712202 +0200
++++ gnome-documents-3.8.4/data/gnome-documents.desktop	2013-09-03 17:11:55.990712149 +0200
+@@ -129,7 +129,6 @@
+ Terminal=false
+ Type=Application
+ StartupNotify=true
+-OnlyShowIn=GNOME;
+ Categories=GNOME;GTK;Utility;Core;
+ Keywords=Docs;PDF;Document;
+ Keywords[ar]=مستندات;المستندات;بي دي اف;
+Index: gnome-documents-3.8.4/data/gnome-documents.desktop.in
+===================================================================
+--- gnome-documents-3.8.4.orig/data/gnome-documents.desktop.in	2013-09-03 17:11:55.994712202 +0200
++++ gnome-documents-3.8.4/data/gnome-documents.desktop.in	2013-09-03 17:11:55.990712149 +0200
+@@ -6,6 +6,5 @@
+ Terminal=false
+ Type=Application
+ StartupNotify=true
+-OnlyShowIn=GNOME;
+ Categories=GNOME;GTK;Utility;Core;
+ _Keywords=Docs;PDF;Document;
+Index: gnome-documents-3.8.4/data/gnome-documents.desktop.in.in
+===================================================================
+--- gnome-documents-3.8.4.orig/data/gnome-documents.desktop.in.in	2013-09-03 17:11:55.994712202 +0200
++++ gnome-documents-3.8.4/data/gnome-documents.desktop.in.in	2013-09-03 17:11:55.990712149 +0200
+@@ -6,6 +6,5 @@
+ Terminal=false
+ Type=Application
+ StartupNotify=true
+-OnlyShowIn=GNOME;
+ Categories=GNOME;GTK;Utility;Core;
+ _Keywords=Docs;PDF;Document;

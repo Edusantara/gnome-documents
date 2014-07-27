@@ -1,0 +1,197 @@
+gnome-documents (3.10.0-0blankon1+edusantara1) anambas; urgency=low
+
+  * Initial release anambas
+
+ -- Syai Mif <syai.unipdu@gmail.com>  Sun, 27 Jul 2014 15:07:53 +0700
+
+gnome-documents (3.10.0-0blankon1) suroboyo; urgency=low
+
+  * debian/control.in:
+    - Add build-depend on gnome-online-miners
+    - Bump build-depend on glib, gtk and tracker
+  * debian/patches/02-no-gettext.patch: Dropped include in new version 
+
+ -- Rahman Yusri Aftian <aftian@di.blankon.in>  Fri, 27 Sep 2013 09:52:11 +0700
+
+gnome-documents (3.8.4-1) unstable; urgency=low
+
+  [ Jeremy Bicha ]
+  * New upstream release
+  * Depend on gir1.2-webkit-3.0 (Closes: #721641)
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 03 Sep 2013 17:12:18 +0200
+
+gnome-documents (3.8.3.1-2) unstable; urgency=low
+
+  [ Jeremy Bicha ]
+  * Update homepage
+
+  [ Michael Biebl ]
+  * debian/watch: Track stable releases following the typical GNOME versioning
+    scheme.
+  * Upload to unstable.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 28 Aug 2013 14:12:32 +0200
+
+gnome-documents (3.8.3.1-1) experimental; urgency=low
+
+  [ Jeremy Bicha ]
+  * New upstream release
+  * debian/control.in:
+    - Add missing dependency on gir1.2-gnomedesktop-3.0
+    - Bump minimum GTK for newer libgd
+    - Build-depend on gtk-doc-tools and yelp-tools
+    - Build-depend on inkscape and poppler-utils to generate
+      getting-started PDF
+  * debian/rules: --enable-getting-started
+
+ -- Andreas Henriksson <andreas@fatal.se>  Mon, 17 Jun 2013 22:24:54 +0200
+
+gnome-documents (3.8.0-1) experimental; urgency=low
+
+  [ Thomas Bechtold ]
+  * New upstream release
+
+ -- Andreas Henriksson <andreas@fatal.se>  Thu, 04 Apr 2013 13:32:08 +0200
+
+gnome-documents (3.7.92-1) experimental; urgency=low
+
+  [ Andreas Henriksson ]
+  * Fix libgdata-dev build dependency version.
+    - 0.13.1-2 should have been 0.13.2-2 to get the right package revision.
+
+  [ Jeremy Bicha ]
+  * debian/copyright:
+    - Drop debian/* section
+
+  [ Andreas Henriksson ]
+  * New upstream release.
+  * Bump build-dependencies according to configure.ac:
+    - dropped libclutter-gtk-1.0-dev
+    - bumped required version of libevince-dev, libgdata-dev, libglib2.0-dev,
+      and libgtk-3-dev
+    - added itstool, libsoup2.4-dev and libwebkitgtk-3.0-dev
+    - switched from libtracker-* from 0.14 to 0.16
+  * Drop gir1.2-*clutter* from gnome-documents package
+  * Switched gnome-documents tracker dependencies from 0.14 to 0.16.
+  * Drop debian/patches/91_link_gdminer_to_gdprivate.patch
+    - originally from upstream, now part of released version.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Mon, 25 Mar 2013 01:23:04 +0100
+
+gnome-documents (3.6.2-1) experimental; urgency=low
+
+  [ Jeremy Bicha ]
+  * New upstream release (v3.6.1).
+  * debian/control.in:
+    - Update dependencies
+
+  [ Andreas Henriksson ]
+  * New upstream release (v3.6.2).
+  * Bump libzapojit-dev and libgdata-dev build-dependencies to include *-2
+    package revision with fixed dependencies, w.r.t. pkg-config.
+  * Add debian/patches/91_link_gdminer_to_gdprivate.patch
+    - fix build (link) failure, picked from upstream git commit c8933107.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Sun, 16 Dec 2012 23:22:30 +0100
+
+gnome-documents (0.4.2-3) unstable; urgency=low
+
+  [ Jeremy Bicha ]
+  * debian/control.in:
+    - Add missing dependency on gir1.2-gnomedesktop-3.0
+
+  [ Michael Biebl ]
+  * Build against tracker 0.16.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 30 Jul 2013 14:28:47 +0200
+
+gnome-documents (0.4.2-2) unstable; urgency=low
+
+  * 01_tracker_cancellations.patch: from upstream git. Correctly handle 
+    Tracker cancellations with the new GError API. Closes: #674047.
+  * Require gjs 1.32.0-3 for the new GError feature.
+
+ -- Josselin Mouette <joss@debian.org>  Mon, 26 Nov 2012 11:31:24 +0100
+
+gnome-documents (0.4.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Upload to unstable.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 16 May 2012 17:53:49 +0200
+
+gnome-documents (0.4.1-1) experimental; urgency=low
+
+  [ Michael Biebl ]
+  * New upstream release.
+
+  [ Jeremy Bicha ]
+  * debian/control.in:
+    - Add libgjs-dev to build-depends
+    - Bump minimum evince, gobject-introspection, glib, gtk, & libgdata
+    - Standards-Version 3.9.3 (no other changes needed)
+  * debian/copyright: Update URL to the final copyright format 1.0 spec.
+  * debian/patches/01-privlib.patch: Dropped, upstream
+  * debian/patches/90_drop-onlyshowin.patch: Refreshed
+
+  [ Michael Biebl ]
+  * Drop explicit Build-Depends on gir1.2-gdata-0.0.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 17 Apr 2012 22:11:47 +0200
+
+gnome-documents (0.2.1-5) unstable; urgency=low
+
+  * Build against tracker 0.14.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 14 Mar 2012 19:22:56 +0100
+
+gnome-documents (0.2.1-4) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Update repository URL.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 10 Mar 2012 11:48:13 +0100
+
+gnome-documents (0.2.1-3) unstable; urgency=low
+
+  [ Krzysztof Klimonda ]
+  * debian/control:
+    - Add Depends on gir1.2-goa-1.0.
+
+  [ Laurent Bigonville ]
+  * debian/control.in:
+    - Add Depends on ${gir:Depends} and gir packages explicitly imported by JS
+    - Drop duplicate Section to please lintian
+    - Switch Vcs-* field to unstable branch
+  * debian/rules:
+    - Call dh_autoreconf with --as-needed argument
+    - Call dh_girepository with private typelib/gir files path
+
+ -- Laurent Bigonville <bigon@debian.org>  Fri, 30 Dec 2011 15:32:33 +0100
+
+gnome-documents (0.2.1-2) experimental; urgency=low
+
+  * debian/watch:
+    - Track .xz tarballs.
+  * Move libgdprivate and typelib file out of the system directories into a
+    package private directory:
+    - Add debian/patches/01-privlib.patch.
+    - Use dh-autoreconf to update the build system.
+    - Stop splitting libgdprivate into separate binary packages.
+  * debian/control:
+    - Add Depends on gjs.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 20 Dec 2011 11:13:37 +0100
+
+gnome-documents (0.2.1-1) experimental; urgency=low
+
+  [ Jeremy Bicha ]
+  * Initial release.
+
+  [ Sjoerd Simons ]
+  * New upstream release
+  * debian/control.in: Depend tracker (>= 0.12.0)
+  * debian/control.in: Recomend unoconv
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sun, 06 Nov 2011 10:48:42 +0000

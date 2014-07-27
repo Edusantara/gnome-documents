@@ -1,0 +1,2 @@
+version=3
+http://download.gnome.org/sources/gnome-documents/([\d\.]+[02468])/gnome-documents-(.*)\.tar\.xz
